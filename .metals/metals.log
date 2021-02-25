@@ -1,0 +1,1912 @@
+[0m2021.02.25 06:53:11 INFO  Started: Metals version 0.10.0 in workspace '/home/nyystanco6/projects/project3' for client vscode 1.53.2.[0m
+[0m2021.02.25 06:53:11 INFO  time: initialize in 0.5s[0m
+[0m2021.02.25 06:53:11 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.25 06:53:11 WARN  no build tool detected in workspace '/home/nyystanco6/projects/project3'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.02.25 06:53:11 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/scalas3read/Runner.scala[0m
+[0m2021.02.25 06:53:14 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+
+
+
+
+[0m2021.02.25 06:53:16 INFO  time: code lens generation in 3.96s[0m
+[0m2021.02.25 06:53:16 INFO  time: code lens generation in 3.97s[0m
+
+
+Feb 25, 2021 6:53:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: 28 is not a valid line number, allowed [0..0]
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: 28 is not a valid line number, allowed [0..0]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: 28 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:38)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:33)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionLspRange.toMeta(CommonMtagsEnrichments.scala:183)
+	at scala.meta.internal.metals.codeactions.InsertInferredType.$anonfun$contribute$5(InsertInferredType.scala:85)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.codeactions.InsertInferredType.$anonfun$contribute$1(InsertInferredType.scala:84)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+Feb 25, 2021 6:53:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: 27 is not a valid line number, allowed [0..0]
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: 27 is not a valid line number, allowed [0..0]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: 27 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:38)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:33)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionLspRange.toMeta(CommonMtagsEnrichments.scala:183)
+	at scala.meta.internal.metals.codeactions.InsertInferredType.$anonfun$contribute$5(InsertInferredType.scala:85)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.codeactions.InsertInferredType.$anonfun$contribute$1(InsertInferredType.scala:84)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+
+
+[0m2021.02.25 06:54:09 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version          := "0.1.0-SNAPSHOT"
+ThisBuild / organization     := "com.example"
+ThisBuild / organizationName := "example"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "project3",
+    libraryDependencies += scalaTest % Test
+  )
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+
+Feb 25, 2021 6:56:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 112
+[0m2021.02.25 06:56:10 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/scalas3read/Runner.scala[0m
+package scalas3read
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("scalas3read")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    val s3DataMaybe = spark.read.text("s3a://usf-210104-big-data/twitterstream/tweetstream-1613536993819-1")
+    s3DataMaybe.show()
+  }
+}
+
+
+[0m2021.02.25 06:56:10 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0"
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:56:10 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:835)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:841)
+	at scala.meta.internal.parsers.ScalametaParser.inParens(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$3(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2890)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$5(ScalametaParser.scala:2823)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2823)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:809)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:819)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2772)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2770)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2754)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2734)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2197)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2092)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2120)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:4007)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3959)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3948)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4748)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4744)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4806)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$scriptSource$1(ScalametaParser.scala:4988)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.scriptSource(ScalametaParser.scala:4987)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4983)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:142)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:52)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:142)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$257.apply(ScalametaParser.scala:5040)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:52)
+
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0"
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:56:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:835)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:841)
+	at scala.meta.internal.parsers.ScalametaParser.inParens(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$3(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2890)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$5(ScalametaParser.scala:2823)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2823)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:809)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:819)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2772)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2770)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2754)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2734)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2197)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2092)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2120)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:4007)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3959)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3948)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4748)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4744)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4806)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$scriptSource$1(ScalametaParser.scala:4988)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.scriptSource(ScalametaParser.scala:4987)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4983)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:142)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:52)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:142)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$257.apply(ScalametaParser.scala:5040)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:52)
+
+Feb 25, 2021 6:56:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 118
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0"
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:56:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:835)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:841)
+	at scala.meta.internal.parsers.ScalametaParser.inParens(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$3(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2890)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$5(ScalametaParser.scala:2823)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2823)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:809)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:819)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2772)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2770)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2754)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2734)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2197)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2092)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2120)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:4007)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3959)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3948)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4748)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4744)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4806)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$scriptSource$1(ScalametaParser.scala:4988)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.scriptSource(ScalametaParser.scala:4987)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4983)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:142)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:52)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:142)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$257.apply(ScalametaParser.scala:5040)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:52)
+
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0"
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:56:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:835)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:841)
+	at scala.meta.internal.parsers.ScalametaParser.inParens(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$3(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2890)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$5(ScalametaParser.scala:2823)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2823)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:809)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:819)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2772)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2770)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2754)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2734)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2197)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2092)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2120)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:4007)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3959)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3948)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4748)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4744)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4806)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$scriptSource$1(ScalametaParser.scala:4988)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.scriptSource(ScalametaParser.scala:4987)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4983)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:142)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:52)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:142)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$257.apply(ScalametaParser.scala:5040)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:52)
+
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0"
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:56:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:835)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:841)
+	at scala.meta.internal.parsers.ScalametaParser.inParens(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$3(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2890)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$5(ScalametaParser.scala:2823)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2823)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:809)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:819)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2772)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2770)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2754)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2734)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2197)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2092)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2120)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:4007)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3959)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3948)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4748)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4744)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4806)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$scriptSource$1(ScalametaParser.scala:4988)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.scriptSource(ScalametaParser.scala:4987)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4983)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:142)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:52)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:142)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$257.apply(ScalametaParser.scala:5040)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:52)
+
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0"
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:56:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:835)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:841)
+	at scala.meta.internal.parsers.ScalametaParser.inParens(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$3(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2890)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$5(ScalametaParser.scala:2823)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2823)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:809)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:819)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2772)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2770)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2754)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2734)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2197)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2092)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2120)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:4007)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3959)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3948)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4748)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4744)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4806)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$scriptSource$1(ScalametaParser.scala:4988)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.scriptSource(ScalametaParser.scala:4987)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4983)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:142)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:52)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:142)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$257.apply(ScalametaParser.scala:5040)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:52)
+
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0"
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:56:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:835)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:841)
+	at scala.meta.internal.parsers.ScalametaParser.inParens(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$3(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2890)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$5(ScalametaParser.scala:2823)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2823)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:809)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:819)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2772)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2770)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2754)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2734)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2197)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2092)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2120)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:4007)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3959)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3948)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4748)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4744)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4806)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$scriptSource$1(ScalametaParser.scala:4988)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.scriptSource(ScalametaParser.scala:4987)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4983)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:142)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:52)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:142)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$257.apply(ScalametaParser.scala:5040)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:52)
+
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0"
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:56:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:835)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:841)
+	at scala.meta.internal.parsers.ScalametaParser.inParens(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$3(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2890)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$5(ScalametaParser.scala:2823)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2823)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:809)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:819)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2772)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2770)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2754)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2734)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2197)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2092)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2120)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:4007)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3959)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3948)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4748)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4744)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4806)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$scriptSource$1(ScalametaParser.scala:4988)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.scriptSource(ScalametaParser.scala:4987)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4983)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:142)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:52)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:142)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$257.apply(ScalametaParser.scala:5040)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:52)
+
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0"
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:56:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+file%3A%2F%2F%2Fhome%2Fnyystanco6%2Fprojects%2Fproject3%2Fproject3%2Fbuild.sbt:20: error: ) expected but string constant found
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+                           ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:835)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:841)
+	at scala.meta.internal.parsers.ScalametaParser.inParens(ScalametaParser.scala:697)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$3(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2905)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExprRest$1(ScalametaParser.scala:2890)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExprRest(ScalametaParser.scala:2877)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$5(ScalametaParser.scala:2823)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2823)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:809)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:819)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2772)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2770)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2754)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2734)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:2311)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2197)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:2092)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:2120)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:4007)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3959)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3948)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4748)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$3.applyOrElse(ScalametaParser.scala:4744)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4806)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$scriptSource$1(ScalametaParser.scala:4988)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.scriptSource(ScalametaParser.scala:4987)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:816)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4977)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4983)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:142)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:52)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:142)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$257.apply(ScalametaParser.scala:5040)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:52)
+
+[0m2021.02.25 06:57:01 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+[0m2021.02.25 06:57:48 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+// assemblyMergeStrategy in assembly := {
+//   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+//   case x => MergeStrategy.first
+// }
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+[0m2021.02.25 06:59:18 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "project3",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 6:59:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 183
+Feb 25, 2021 7:00:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 194
+[0m2021.02.25 07:00:43 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "project3",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+// assemblyMergeStrategy in assembly := {
+//   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+//   case x => MergeStrategy.first
+// }
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 7:02:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 211
+something's wrong: no file:///home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/scalas3read/Runner.scala in Array[String]RangePosition(file:///home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/scalas3read/Runner.scala, 96, 96, 109)
+Feb 25, 2021 7:05:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 226
+Feb 25, 2021 7:05:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 236
+Feb 25, 2021 7:05:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 245
+Feb 25, 2021 7:06:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 273
+[0m2021.02.25 07:06:56 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/scalas3read/Runner.scala[0m
+package com.revature.scalas3read
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("scalas3read")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    val s3DataMaybe = spark.read.text("s3a://usf-210104-big-data/twitterstream/tweetstream-1613536993819-1")
+    s3DataMaybe.show()
+  }
+}
+
+
+[0m2021.02.25 07:06:56 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "project3",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 7:07:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 290
+[0m2021.02.25 07:07:18 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.0.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 7:08:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 362
+Feb 25, 2021 7:09:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 369
+[0m2021.02.25 07:11:40 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "scalas3read",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    // https://mvnrepository.com/artifact/commons-io/commons-io,
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 7:12:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 395
+Feb 25, 2021 7:12:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 422
+Feb 25, 2021 7:15:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 665
+Feb 25, 2021 7:15:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 698
+[0m2021.02.25 07:15:27 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.scalas3read
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("scalas3read")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    val s3DataMaybe = spark.read.text("s3a://usf-210104-big-data/twitterstream/tweetstream-1613536993819-1")
+    s3DataMaybe.show()
+  }
+}
+
+
+[0m2021.02.25 07:15:30 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    s3DataMaybe.take(2000).foreach(println)
+
+  }
+}
+
+
+[0m2021.02.25 07:15:30 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion     := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "project3",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    // https://mvnrepository.com/artifact/commons-io/commons-io,
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+Feb 25, 2021 7:15:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 705
+Feb 25, 2021 7:16:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 729
+Feb 25, 2021 7:19:33 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 741
+[0m2021.02.25 07:22:51 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion := "2.13.4"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "project3",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    // https://mvnrepository.com/artifact/commons-io/commons-io,
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+[0m2021.02.25 07:23:05 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+import Dependencies._
+
+ThisBuild / scalaVersion := "2.11.12"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.revature"
+ThisBuild / organizationName := "revature"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "project3",
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12",
+    libraryDependencies += "commons-io" % "commons-io" % "2.8.0",
+    // https://mvnrepository.com/artifact/commons-io/commons-io,
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.7",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.7.7"
+  )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+
+[0m2021.02.25 07:25:17 WARN  no build target for: /home/nyystanco6/projects/project3/project3/project/plugins.sbt[0m
+
+
+
+
+
+
+
+
+
+
+[0m2021.02.25 07:25:25 WARN  no build target for: /home/nyystanco6/projects/project3/project3/project/plugins.sbt[0m
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.15.0")
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.15.0")
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.15.0")
+Feb 25, 2021 7:25:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 861
+[0m2021.02.25 07:26:11 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+Feb 25, 2021 7:39:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1141
+Feb 25, 2021 7:39:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1153
+[0m2021.02.25 07:41:13 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    s3DataMaybe.take(2000).foreach(println)
+    
+    val s3DataMaybe = spark.read.text("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    s3DataMaybe.createOrReplaceTempView("maybe")
+    spark.sql("select * from maybe")
+
+  }
+}
+
+
+[0m2021.02.25 07:41:51 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    //val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    //s3DataMaybe.take(2000).foreach(println)
+    
+    val s3DataMaybe = spark.read.text("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    s3DataMaybe.createOrReplaceTempView("maybe")
+    spark.sql("select * from maybe")
+
+  }
+}
+
+
+[0m2021.02.25 07:42:52 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    //val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    //s3DataMaybe.take(2000).foreach(println)
+    
+    val s3DataMaybe = spark.read.text("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    s3DataMaybe.createOrReplaceTempView("maybe")
+    val qweewee = spark.sql("select * from maybe")
+    queewee.show()
+  }
+}
+
+
+[0m2021.02.25 07:43:08 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    //val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    //s3DataMaybe.take(2000).foreach(println)
+    
+    val s3DataMaybe = spark.read.text("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    s3DataMaybe.createOrReplaceTempView("maybe")
+    val qweewee = spark.sql("select * from maybe")
+    qweewee.show()
+  }
+}
+
+
+[0m2021.02.25 07:44:43 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    //s3DataMaybe.take(2000).foreach(println)
+    
+    //val s3DataMaybe = spark.read.text("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    s3DataMaybe.createOrReplaceTempView("maybe")
+    val qweewee = spark.sql("select * from maybe")
+    qweewee.show()
+  }
+}
+
+
+[0m2021.02.25 07:45:35 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    //val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    //s3DataMaybe.take(2000).foreach(println)
+    
+    val s3DataMaybe = spark.read.text("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    s3DataMaybe.createOrReplaceTempView("maybe")
+    val qweewee = spark.sql("select * from maybe")
+    qweewee.show()
+  }
+}
+
+
+[0m2021.02.25 07:46:44 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    //val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    //s3DataMaybe.take(2000).foreach(println)
+    
+    val s3DataMaybe = spark.read.text("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    val s3DataYes = s3DataMaybe.take(2000)
+    s3DataYes.createOrReplaceTempView("yess3DataYes")
+    val qweewee = spark.sql("select * from yess3DataYes")
+    qweewee.show()
+  }
+}
+
+
+[0m2021.02.25 07:48:49 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    //val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    //s3DataMaybe.take(2000).foreach(println)
+    
+    val s3DataMaybe = spark.read.text("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    val s3DataYes = s3DataMaybe.take(2000)
+    println(s3DataYes)
+    // s3DataYes.createOrReplaceTempView("yess3DataYes")
+    // val qweewee = spark.sql("select * from yess3DataYes")
+    // qweewee.show()
+  }
+}
+
+
+Feb 25, 2021 7:50:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1657
+Feb 25, 2021 7:50:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1775
+[0m2021.02.25 07:52:34 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    //val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    //s3DataMaybe.take(2000).foreach(println)
+    
+    hadoop_conf = spark.sparkContext._jsc.hadoopConfiguration()
+    hadoop_conf.set("fs.s3a.awsAccessKeyId", key)
+    hadoop_conf.set("fs.s3a.awsSecretAccessKey", secret)
+    hadoop_conf.set("fs.s3a.impl","org.apache.hadoop.fs.s3a.S3AFileSystem")
+    hadoop_conf.set("fs.s3a.impl","org.apache.hadoop.fs.s3native.NativeS3FileSystem")
+    hadoop_conf.set("com.amazonaws.services.s3.enableV4", "true")
+    hadoop_conf.set("fs.s3a.aws.credentials.provider","org.apache.hadoop.fs.s3a.BasicAWSCredentialsProvider")
+    //hadoop_conf.set("fs.s3a.endpoint", "<aws_region>.amazonaws.com")
+
+    val s3DataMaybe = spark.read.text("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    val s3DataYes = s3DataMaybe.take(2000)
+    println(s3DataYes)
+    // s3DataYes.createOrReplaceTempView("yess3DataYes")
+    // val qweewee = spark.sql("select * from yess3DataYes")
+    // qweewee.show()
+  }
+}
+
+
+[0m2021.02.25 07:52:34 WARN  no build target for: /home/nyystanco6/projects/project3/project3/build.sbt[0m
+[0m2021.02.25 07:57:42 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    //val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    //s3DataMaybe.take(2000).foreach(println)
+
+  }
+}
+
+
+[0m2021.02.25 07:59:11 WARN  no build target for: /home/nyystanco6/projects/project3/project3/src/main/scala/com/revtaure/project3/Runner.scala[0m
+package com.revature.project3
+
+import org.apache.spark.sql.SparkSession
+
+object Runner {
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession
+      .builder()
+      .appName("project3")
+      .master("local[4]")
+      .getOrCreate()
+
+    // Reference: https://sparkbyexamples.com/spark/spark-read-text-file-from-s3/#s3-dependency
+    val key = System.getenv(("DAS_KEY_ID"))
+    val secret = System.getenv(("DAS_SEC"))
+
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.access.key", key)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.secret.key", secret)
+    spark.sparkContext.hadoopConfiguration.set("fs.s3a.endpoint", "s3.amazonaws.com")
+    
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+
+    val s3DataMaybe = spark.sparkContext.textFile("s3a://commoncrawl/crawl-data/CC-MAIN-2013-48/segments/1386163035819/warc/CC-MAIN-20131204131715-00000-ip-10-33-133-15.ec2.internal.warc.gz")
+    s3DataMaybe.take(2000).foreach(println)
+
+  }
+}
+
+
+Feb 25, 2021 7:59:58 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1922
